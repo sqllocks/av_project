@@ -25,6 +25,12 @@ Many common data quality issues were identified and required cleaning at the Sil
 
 | File | Issue Type | Description | Impact | Records |
 | :-- | :-- | :-- | :-- | :-- |
+| Discrepancies | No Descriptive Exit Reasons | Only numeric exit reason codes present; need mapping during ETL | Requires generation of code-to-description mapping |  |
+| Discrepancies | No Location Information | Can't report the where, who and why by location | Limits reporting and analysis by geography/office |  |
+| Discrepancies | No Target vs Headcount | No information for target vs actual headcount | Cannot perform variance/gap analysis |  |
+| Discrepancies | Department Name Mismatch | Departments listed do not match source files (Back Office, IT, Manufacturing) | Manual mapping or transformation required |  |
+| Discrepancies | No Generation Description | No generation field -- only birthdate available | Must transform or calculate generation in ETL |  |
+| :-- | :-- | :-- | :-- | :-- |
 | employees.csv | Missing Values | Possible null or missing salary | ETL failure, inaccurate headcount or aging | 50625.0 |
 | employees.csv | Missing Values | Missing Department Info | ETL failure | 42941.0 |
 | employees.csv | Missing Values | Complete null row | ETL failure | 777.0 |
