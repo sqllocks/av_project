@@ -3,6 +3,9 @@
 
 ## Overview
 
+The below files were uploaded to an **Amazon S3 bucket**. Using **FiveTran**, they were synced into a **Snowflake** database, structured by the *Medallion Architecture* (Bronze, Silver, Gold, Platinum layers).
+ETL and data quality were managed with **dbt**; business reporting leveraged **Tableau** dashboards built on the Platinum layer views.
+
 Seven CSV files were provided as the source for the data pipeline:
 
 - `employees.csv` (~70,098 rows)
@@ -12,9 +15,6 @@ Seven CSV files were provided as the source for the data pipeline:
 - `dept_manager.csv` (~24 rows)
 - `departments.csv` (~10 rows)
 - `titles.csv` (~8 rows)
-
-The files were uploaded to an **Amazon S3 bucket**. Using **FiveTran**, they were synced into a **Snowflake** database, structured by the *Medallion Architecture* (Bronze, Silver, Gold, Platinum layers).
-ETL and data quality were managed with **dbt**; business reporting leveraged **Tableau** dashboards built on the Platinum layer views.
 
 ***
 
