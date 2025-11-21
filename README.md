@@ -63,12 +63,14 @@ ETL and data quality were managed with **dbt**; business reporting leveraged **T
 
 ## Entity-Relationship (ER) Diagrams
 
-### Silver Layer Model
-
 ### Bronze Layer Model
+![Bronze Layer](AV_Homework_Models-bronze.jpg)
+
+### Silver Layer Model
+![Bronze Layer](AV_Homework_Models-bronze.jpg)
 
 ### Gold Layer Model
-
+![Gold Layer](AV_Homework_Models-gold.jpg)
 
 ***
 
